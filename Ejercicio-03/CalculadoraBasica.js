@@ -74,13 +74,13 @@ class CalculadoraBasica {
                 this.sumar();
             }
             if(tecla == '-'){
-                this.sumar();
+                this.restar();
             }
             if(tecla == '*'){
-                this.sumar();
+                this.multiplicacion();
             }
             if(tecla == '/'){
-                this.sumar();
+                this.division();
             }
             if(tecla == "Enter"){
                 this.igual();
@@ -88,6 +88,7 @@ class CalculadoraBasica {
             if(tecla == '.'){
                 this.punto();
             }
+            alert('keydown event\n\n' + 'key: ' + tecla)
         });
     }
 }
