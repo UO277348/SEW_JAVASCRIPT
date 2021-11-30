@@ -5,7 +5,7 @@ class CalculadoraBasica {
         this.pila = new Array();
         this.n1 = null;
         this.n2 = null;
-        this.numero = null;
+        this.numero = "";
     }
 
     sin(){
