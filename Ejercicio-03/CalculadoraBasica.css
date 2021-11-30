@@ -38,3 +38,7 @@ form :nth-child(2), form :nth-child(3), form :nth-child(4){
 form :last-child {
 	background-color: white;
 }
+
+input[type="submit"]{
+	display: none;
+}
