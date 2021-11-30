@@ -71,16 +71,16 @@ class CalculadoraBasica {
                     this.digitos(tecla);
             }
             if(tecla == '+'){
-                this.sumar();
+                this.suma();
             }
             if(tecla == '-'){
-                this.sumar();
+                this.resta();
             }
             if(tecla == '*'){
-                this.sumar();
+                this.multiplicacion();
             }
             if(tecla == '/'){
-                this.sumar();
+                this.division();
             }
             if(tecla == "Enter"){
                 this.igual();
@@ -90,5 +90,4 @@ class CalculadoraBasica {
             }
         });
     }
-
 }

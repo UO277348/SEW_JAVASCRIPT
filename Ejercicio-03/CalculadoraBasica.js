@@ -71,10 +71,10 @@ class CalculadoraBasica {
                     this.digitos(tecla);
             }
             if(tecla == '+'){
-                this.sumar();
+                this.suma();
             }
             if(tecla == '-'){
-                this.restar();
+                this.resta();
             }
             if(tecla == '*'){
                 this.multiplicacion();
@@ -88,7 +88,6 @@ class CalculadoraBasica {
             if(tecla == '.'){
                 this.punto();
             }
-            alert('keydown event\n\n' + 'key: ' + tecla)
         });
     }
 }
