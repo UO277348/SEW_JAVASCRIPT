@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name = "author" content = "Pablo Rodríguez Toraño">
+    <title>Ejercicio 7</title>
+    <meta name = "keywords" content = "">
+    <meta  name = "description" content="">
+    <meta name ="viewport" content="width=device-width, initial scale = 1.0">
+    <link rel="stylesheet" type="text/css" href="Ejercicio7.css"/>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="Ejercicio7.js"></script>
+</head>
+
+<body>
+    <h1 id = "om">Ejercicio 7</h1>
+    <p id = "om2">Estos son los elementos que se ocultarán y se mostrarán</p>
+    <input type="button" value= "ocultar" onclick="ocultar()">
+    <input type="button" value= "mostrar" onclick="mostrar()">
+
+    <h2 id="mod">Estos serán modificados</h2>
+    <p id="mod2">Se moficiarán el texto</p>
+    <ul id = "mod3">
+        <li>Soy hay un elemento a modificar</li>
+    </ul>
+
+    <input type="button" value= "modificar" onclick="modificar()">
+
+    <h3>Añadir y eliminar</h3>
+
+    <p id="append">Añadiré un elemento de cada y eliminaré también uno de cada</p>
+
+    <ul>
+        <li>UNO</li>
+        <li>DOS</li>
+        <li>TRES</li>
+        <li>CUATRO</li>
+    </ul>
+
+
+    <input type="button" value= "añadir" onclick="añadir()">
+    <input type="button" value= "eliminar" onclick="eliminar()">
+
+    <h3>Recorrer el HTML</h3>
+    <ul>
+        <li>UNO</li>
+        <li>DOS</li>
+        <li>TRES</li>
+        <li>CUATRO</li>
+    </ul>
+    <input type="button" value= "recorrer" onclick="recorrerHTML()">
+
+    <p></p>
+
+    <table>
+        <caption>Premios obtenidos a lo largo de su carrera</caption>
+        <tr>
+            <th>Premio</th>
+            <th>Año obtención</th>
+        </tr>
+        <tbody>
+            <tr>
+                <td>UdK 01-Award</td>
+                <td>2001</td>
+            </tr>
+            <tr>
+                <td>JD Warnier Prix D'Informatique</td>
+                <td>2001</td>
+            </tr>
+            <tr>
+                <td>Premio NEC Computers & Communication Foundation</td>
+                <td>2001</td>
+            </tr>
+
+            <tr>
+                <td>Premio de Tecnología del Festival Tecnológico de Telluride</td>
+                <td>2002</td>
+            </tr>
+
+            <tr>
+                <td>ACM Turing Award</td>
+                <td>2003</td>
+            </tr>
+
+            <tr>
+                <td>Premio Kioto y el Premio Charles Stark Draper</td>
+                <td>2004</td>
+            </tr>
+            <tr>
+                <td>Premio Charles Stark Draper</td>
+                <td>2004</td>
+            </tr>
+
+            <tr>
+                <td>Premio UPE Abacus</td>
+                <td>2012</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <input id="suma" type="button" value= "sumar filas y columnas" onclick="sumar()">
+</body>
+
+</html>

@@ -24,8 +24,10 @@ form :nth-child(4n+1){
 }
 
 form :nth-child(1) {
-	grid-column: 1/5;
-	grid-row: 1;
+	grid-column-start: 1;
+	grid-column-end: 5;
+	grid-row-start: 1;
+	grid-row-end: 1;
 	background-color: white;
 	text-align: end;
 }

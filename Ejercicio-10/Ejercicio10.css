@@ -1,0 +1,12 @@
+table{
+  border-collapse: collapse;
+}
+
+td, th, tr, tbody{
+  border: 0.2ex solid black;
+  text-align: center;
+} 
+
+body{
+  background-color: goldenrod;
+}
