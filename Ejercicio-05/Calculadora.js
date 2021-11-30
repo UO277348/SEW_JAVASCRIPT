@@ -120,7 +120,7 @@ class CalculadoraBasica {
         for(var i in this.pila)
             this.pantalla += this.pila[i].toString() +"\n";
         document.getElementById("operacion").value = this.pantalla;
-        this.numero = null;
+        this.numero = "";
     }
 
     pulsarTeclas(){

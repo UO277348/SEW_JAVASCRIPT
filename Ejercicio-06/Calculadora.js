@@ -5,7 +5,7 @@ class CalculadoraBasica {
         this.pila = new Array();
         this.n1 = null;
         this.n2 = null;
-        this.numero = null;
+        this.numero = "";
     }
 
     sin(){
@@ -120,7 +120,7 @@ class CalculadoraBasica {
         for(var i in this.pila)
             this.pantalla += this.pila[i].toString() +"\n";
         document.getElementById("operacion").value = this.pantalla;
-        this.numero = null;
+        this.numero = "";
     }
 
     pulsarTeclas(){
@@ -153,3 +153,6 @@ class CalculadoraBasica {
     }
 
 }
+
+var calculadora = new CalculadoraBasica();
+calculadora.pulsarTeclas();
