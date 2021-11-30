@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name = "author" content = "Pablo Rodríguez Toraño">
+    <title>Calculadora Cientifica</title>
+    <meta name = "keywords" content = "">
+    <meta  name = "description" content="">
+    <meta name ="viewport" content="width=device-width, initial scale = 1.0">
+    <link rel="stylesheet" type="text/css" href="CalculadoraCientifica.css" />
+    <script src="CalculadoraBasica.js"></script>
+	<script src="CalculadoraCientifica.js"></script>
+</head>
+
+<body>
+
+	<header>
+        <h1>Calculadora Cientifica</h1>
+    </header>
+
+   
+    <form>
+        <input disabled id="operacion" type="text"/>
+
+        <input id="modo" type="button" value = "DEG" onClick = "calculadora.deg()"/>
+        <input type="button" value = "HYP" onClick = "calculadora.hyp()"/>
+        <input type="button" value = "F-E" onClick = "calculadora.fe()"/>
+
+
+        <input type="button" value = "MC" onClick = "calculadora.mc()"/>
+        <input type="button" value = "MR" onClick = "calculadora.mr()"/>
+        <input type="button" value = "M+" onClick = "calculadora.mMas()"/>
+        <input type="button" value = "M-" onClick = "calculadora.mMenos()"/>
+        <input type="button" value = "MS" onClick = "calculadora.ms()"/>
+
+        <input type="button" value = "x&#178" onClick = "calculadora.elevado2()"/>
+        <input type="button" value = "x^y" onClick = "calculadora.elevadoY()"/>
+        <input id="sin" type="button" value = "sin" onClick = "calculadora.sin()"/>
+        <input id="cos" type="button" value = "cos" onClick = "calculadora.cos()"/>
+        <input id="tan" type="button" value = "tan" onClick = "calculadora.tan()"/>
+        <input type="button" value = "&#8730" onClick = "calculadora.raiz()"/>
+        <input type="button" value = "10^x" onClick = "calculadora.base10()"/>
+        <input type="button" value = "log" onClick = "calculadora.log()"/>
+        <input type="button" value = "Exp" onClick = "calculadora.exp()"/>
+        <input type="button" value = "Mod" onClick = "calculadora.mod()"/>
+        <input type="button" value = "e" onClick = "calculadora.e()"/>
+        <input type="button" value = "ce" onClick = "calculadora.cero()"/>
+        <input type="button" value = "c" onClick = "calculadora.borrar()"/>
+        <input type="button" value = "&#8592" onClick = "calculadora.eliminar()"/>
+        <input type="button" value = "&divide" onClick = "calculadora.dividar()"/>
+        <input type="button" value = "&#960" onClick = "calculadora.pi()"/>
+        <input type="button" value = "7" onClick = "calculadora.digitos(7)"/>
+        <input type="button" value = "8" onClick = "calculadora.digitos(8)"/>
+        <input type="button" value = "9" onClick = "calculadora.digitos(9)"/>
+        <input type="button" value = "*" onClick = "calculadora.multiplicacion()"/>
+        <input type="button" value = "n!" onClick = "calculadora.fact()"/>
+        <input type="button" value = "4" onClick = "calculadora.digitos(4)"/>
+        <input type="button" value = "5" onClick = "calculadora.digitos(5)"/>
+        <input type="button" value = "6" onClick = "calculadora.digitos(6)"/>
+        <input type="button" value = "-" onClick = "calculadora.resta()"/>
+        <input type="button" value = "&plusmn" onClick = "calculadora.cambiarSigno()"/>
+        <input type="button" value = "1" onClick = "calculadora.digitos(1)"/>
+        <input type="button" value = "2" onClick = "calculadora.digitos(2)"/>
+        <input type="button" value = "3" onClick = "calculadora.digitos(3)"/>
+        <input type="button" value = "+" onClick = "calculadora.suma()"/>
+        <input type="button" value = "(" onClick = "calculadora.parentesisIzq()"/>
+        <input type="button" value = ")" onClick = "calculadora.parentesisDcho()"/>
+        <input type="button" value = "0" onClick = "calculadora.digitos(0)"/>
+        <input type="button" value = "," onClick = "calculadora.punto()"/>
+        <input type="button" value = "=" onClick = "calculadora.igual()"/>
+    </form>
+
+</body>
+</html>

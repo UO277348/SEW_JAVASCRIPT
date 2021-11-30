@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name = "author" content = "Pablo Rodríguez Toraño">
+    <title>Calculadora RPN</title>
+    <meta name = "keywords" content = "">
+    <meta  name = "description" content="">
+    <meta name ="viewport" content="width=device-width, initial scale = 1.0">
+    <link rel="stylesheet" type="text/css" href="Calculadora.css" />
+    <script src="Calculadora.js"></script>
+    <script src="CalculadoraEnergetica.js"></script>
+</head>
+
+<body>
+
+	<header>
+        <h1>Calculadora RPN</h1>
+    </header>
+
+   
+    <form>
+        <textarea id="operacion"></textarea>
+
+        <input type="button" value = "Watio" onClick = "calculadora.watio()"/>
+        <input type="button" value = "kiloWatio" onClick = "calculadora.kwatio()"/>
+        <input type="button" value = "Coste" onClick = "calculadora.coste()"/>
+
+        <input type="button" value = "Conusmo Diario" onClick = "calculadora.consumoDiario()"/>
+        <input type="button" value = "Consumo Mensual" onClick = "calculadora.consumoMensual()"/>
+
+        <input type="button" value = "Coste Vivienda" onClick = "calculadora.costeVivienda()"/>
+        <input type="button" value = "Coste Edificio" onClick = "calculadora.costeEdificio()"/>
+        <input type="button" value = "Coste Fabrica" onClick = "calculadora.costeFabrica()"/>
+
+        <input type="button" value = "enter" onClick = "calculadora.enter()"/>
+        
+        <input type="button" value = "/" onClick = "calculadora.division()"/> 
+
+        <input type="button" value = "7" onClick = "calculadora.digitos(7)"/>
+        <input type="button" value = "8" onClick = "calculadora.digitos(8)"/>
+        <input type="button" value = "9" onClick = "calculadora.digitos(9)"/>
+
+        <input type="button" value = "*" onClick = "calculadora.multiplicacion()"/> 
+
+        <input type="button" value = "4" onClick = "calculadora.digitos(4)"/>
+        <input type="button" value = "5" onClick = "calculadora.digitos(5)"/>
+        <input type="button" value = "6" onClick = "calculadora.digitos(6)"/>
+
+        <input type="button" value = "-" onClick = "calculadora.resta()"/> 
+
+        <input type="button" value = "1" onClick = "calculadora.digitos(1)"/>
+        <input type="button" value = "2" onClick = "calculadora.digitos(2)"/>
+        <input type="button" value = "3" onClick = "calculadora.digitos(3)"/>
+
+        <input type="button" value = "+" onClick = "calculadora.suma()"/> 
+        <input type="button" value = "c" onClick = "calculadora.borrar()"/>
+
+        <input type="button" value = "0" onClick = "calculadora.digitos(0)"/>
+        <input type="button" value = "," onClick = "calculadora.punto()"/>
+        
+        
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name = "author" content = "Pablo Rodríguez Toraño">
+    <title>Calculadora Basica</title>
+    <meta name = "keywords" content = "">
+    <meta  name = "description" content="">
+    <meta name ="viewport" content="width=device-width, initial scale = 1.0">
+    <link rel="stylesheet" type="text/css" href="CalculadoraBasica.css" />
+	<script src="CalculadoraBasica.js"></script>
+</head>
+
+<body>
+
+	<header>
+        <h1>Calculadora Basica</h1>
+    </header>
+
+   
+    <form>
+        <input disabled id="operacion" type="text"/>
+
+        <input type="button" value = "mrc" onClick = "calculadora.mrc()"/>
+        <input type="button" value = "m-" onClick = "calculadora.mMenos()"/>
+        <input type="button" value = "m+" onClick = "calculadora.mMas()"/>
+        <input type="button" value = "/" onClick = "calculadora.division()"/>
+        <input type="button" value = "7" onClick = "calculadora.digitos(7)"/>
+        <input type="button" value = "8" onClick = "calculadora.digitos(8)"/>
+        <input type="button" value = "9" onClick = "calculadora.digitos(9)"/>
+        <input type="button" value = "*" onClick = "calculadora.multiplicacion()"/>
+        <input type="button" value = "4" onClick = "calculadora.digitos(4)"/>
+        <input type="button" value = "5" onClick = "calculadora.digitos(5)"/>
+        <input type="button" value = "6" onClick = "calculadora.digitos(6)"/>
+        <input type="button" value = "-" onClick = "calculadora.resta()"/>
+        <input type="button" value = "1" onClick = "calculadora.digitos(1)"/>
+        <input type="button" value = "2" onClick = "calculadora.digitos(2)"/>
+        <input type="button" value = "3" onClick = "calculadora.digitos(3)"/>
+        <input type="button" value = "+" onClick = "calculadora.suma()"/>
+        <input type="button" value = "0" onClick = "calculadora.digitos(0)"/>
+        <input type="button" value = "." onClick = "calculadora.punto()"/>
+        <input type="button" value = "c" onClick = "calculadora.borrar()"/>
+        <input type="button" value = "=" onClick = "calculadora.igual()"/>
+    </form>
+
+</body>
+</html>
