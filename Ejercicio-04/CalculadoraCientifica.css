@@ -67,3 +67,7 @@ form :nth-child(26), :nth-child(27), :nth-child(28),
 		:nth-child(42), :nth-child(43){
 	background-color: white;
 }
+
+input[type="submit"]{
+	display: none;
+}
