@@ -73,3 +73,6 @@ form :nth-child(4n+11){
 	color:white;
 } 
 
+input[type="submit"]{
+	display: none;
+}
