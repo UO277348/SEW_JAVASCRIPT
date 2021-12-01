@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+    <meta name = "author" content = "Pablo Rodríguez Toraño">
+    <title>MapaDinamicoUsuario</title>
+    <meta name = "keywords" content = "">
+    <meta  name = "description" content="">
+    <meta name ="viewport" content="width=device-width, initial scale = 1.0">
+    <link rel="stylesheet" type="text/css" href="MapaTematicaLibre.css"/>
+    <script src="MapaTematicaLibre.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6j4mF6blrc4kZ54S6vYZ2_FpMY9VzyRU&callback=miMapa.crearMarker"></script>
+</head>
+
+<body>
+    <h1>Creo un marker según las coordenadas introducidas</h1>
+    <h2>Este marker es unico y se va desplazando, pero el mapa no te lleva a donde lo hayas puesto, simplemente lo pone</h2>
+    <label for="lat">Latitud</label>
+    <input id="lat" type="number" />
+    
+    <label for="long">Longitud</label>
+    <input id="long" type="number" />
+    <input type="button" onclick="miMapa.crearMarker()" value="Crear Marker"/>
+    <main id="mapa"></main>
+   
+    <footer>
+        <address>
+            <p>Detalles de autor:</p>
+            <a href = "mailto:UO277348@univoi.es">Pablo Rodríguez Toraño</a>
+        </address>
+    </footer>
+</body>
+
+</html>
