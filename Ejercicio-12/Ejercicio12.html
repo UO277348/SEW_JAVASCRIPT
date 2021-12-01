@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name = "author" content = "Pablo Rodríguez Toraño">
+    <title>Ejercicio 12</title>
+    <meta name = "keywords" content = "">
+    <meta  name = "description" content="">
+    <meta name ="viewport" content="width=device-width, initial scale = 1.0">
+    <link rel="stylesheet" type="text/css" href="Ejercicio12.css"/>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="Ejercicio12.js"></script>
+</head>
+
+<body>
+    <h1> Lee ficheros </h1>
+    <p>UO277348</p>
+    <label for="archivoTexto">Introduce el texto a leer</label>
+    <input type="file" id="archivoTexto" onchange="reader.leerArchivoTexto(this.files);">
+    <section id="datos">
+    </section>
+    <pre id="areaTexto"></pre>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+body{
+	text-align: center;
+	background-color: khaki;
+}
+
+form {
+	display: grid;
+	grid-template-columns: repeat(4, 5em);
+	grid-template-rows: repeat(5, 5em);
+	margin: auto;
+	background-color: grey;
+	border-radius: 0.5em;
+	width: fit-content;
+}
+
+form input{
+	font-size: 1.5em;
+	margin: 0.5em;
+	border-radius: 0.5em;
+}
+
+form :nth-child(4n+1){
+	background-color: red;
+}
+
+form :nth-child(1) {
+	grid-column-start: 1;
+	grid-column-end: 5;
+	grid-row-start: 1;
+	grid-row-end: 1;
+	background-color: white;
+	text-align: end;
+}
+
+form :nth-child(2), form :nth-child(3), form :nth-child(4){
+	background-color: black;
+	color:white;
+}
+
+form :last-child {
+	background-color: white;
+}
+
+input[type="submit"]{
+	display: none;
+}

@@ -1,0 +1,81 @@
+body{
+	text-align: center;
+	background-color: khaki;
+}
+
+form {
+	display: grid;
+	grid-template-columns: repeat(5, 5em);
+	grid-template-rows: repeat(9, 5em);
+	margin: auto;
+	background-color: grey;
+	border-radius: 0.5em;
+	width: fit-content;
+}
+
+form input{
+	font-size: 1.5em;
+	margin: 0.5em;
+	border-radius: 0.5em;
+	background-color: lightgray;
+}
+
+form :nth-child(5n+4){
+	background-color: red;
+}
+
+form :nth-child(1) {
+	grid-column-start: 1;
+	grid-column-end: 6;
+	grid-row-start: 1;
+	grid-row-end: 1;
+	background-color: white;
+	text-align: end;
+}
+
+form :nth-child(2) {
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row-start: 2;
+	grid-row-end: 2;
+	background-color: black;
+	color:white;
+}
+
+form :nth-child(3){
+	grid-column-start: 3;
+	grid-column-end: 5;
+	grid-row-start: 2;
+	grid-row-end: 2;
+	background-color: black;
+	color:white;
+}
+
+form :nth-child(4){
+	grid-column-start: 5;
+	grid-column-end: 6;
+	grid-row-start: 2;
+	grid-row-end: 2;
+	background-color: black;
+	color:white;
+}
+
+form :nth-child(5), form :nth-child(6), form :nth-child(7), form :nth-child(8), form :nth-child(9){
+	background-color: black;
+	color:white;
+}
+
+form :nth-child(14), form :nth-child(19), form :last-child {
+	background-color: lightgray;
+}
+
+form :nth-child(26), :nth-child(27), :nth-child(28), 
+		:nth-child(31), :nth-child(32), :nth-child(33), 
+		:nth-child(36), :nth-child(37), :nth-child(38), 
+		:nth-child(42), :nth-child(43){
+	background-color: white;
+}
+
+input[type="submit"]{
+	display: none;
+}
